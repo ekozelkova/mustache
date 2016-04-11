@@ -9,3 +9,7 @@ function loadUser() {
     var rendered = Mustache.render(template, {name: "Luke"});
     $('#target').html(rendered);
 }
+
+$(document).ready(function () {
+    loadUser()
+});
